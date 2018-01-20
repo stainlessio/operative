@@ -19,7 +19,7 @@ public:
 	void modify(const IMeshModifier* modifier);
 
 	std::vector<Face> faces;
-	ofMesh mesh;
+	of3dPrimitive obj;
 	int showWireframe;
 };
 

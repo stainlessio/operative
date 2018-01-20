@@ -181,6 +181,7 @@
     <ClCompile Include="src\ofApp.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\Expand.h" />
     <ClInclude Include="src\face.h" />
     <ClInclude Include="src\BaseUnitModifier.h" />
     <ClInclude Include="src\IFaceModifier.h" />

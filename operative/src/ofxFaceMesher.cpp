@@ -17,17 +17,24 @@ ofxFaceMesher::~ofxFaceMesher()
 void ofxFaceMesher::draw()
 {
 	switch (showWireframe) {
-	case 0:
-		mesh.draw(); break;
-	case 1:
-		mesh.drawWireframe(); break;
-	default:
-		mesh.drawVertices(); break;
+		case 0:
+			obj.draw(); break;
+		case 1:
+			obj.draw();
+			obj.drawNormals(25.f);
+			break;
+		case 2:
+			obj.drawWireframe(); break;
+		default:
+			obj.drawVertices(); break;
 	}
+	
+
 }
 
 void ofxFaceMesher::regenerateMesh()
 {
+	ofMesh& mesh = obj.getMesh();
 	mesh.setMode(OF_PRIMITIVE_TRIANGLES);
 	mesh.clear();
 	int count = 0;
@@ -39,6 +46,8 @@ void ofxFaceMesher::regenerateMesh()
 		mesh.addIndex(count + 2);
 		mesh.addIndex(count + 3);
 		mesh.addIndex(count + 0);
+		mesh.addNormal(face.normal);
+		mesh.addNormal(face.normal);
 		mesh.addNormal(face.normal);
 		mesh.addNormal(face.normal);
 		count += 4;

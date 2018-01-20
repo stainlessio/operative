@@ -41,6 +41,9 @@
     <ClInclude Include="src\BaseUnitModifier.h">
       <Filter>src</Filter>
     </ClInclude>
+    <ClInclude Include="src\Expand.h">
+      <Filter>src</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="icon.rc" />

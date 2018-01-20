@@ -5,5 +5,5 @@
 class IFaceModifier {
 public:
 	virtual ~IFaceModifier() = default;
-	virtual void modify(Face face) const = 0;
+	virtual void modify(Face& face) const = 0;
 };

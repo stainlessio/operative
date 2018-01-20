@@ -32,10 +32,11 @@ class ofApp : public ofBaseApp{
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
 
-		ofLight light;
-		ofEasyCam cam;
+		ofLight light, ambient, crossLight;
+		ofCamera cam;
 		ofxFaceMesher mesher;
 		std::vector<Modifier> modifiers;
 		ofMaterial material;
-		
+		float x,y,z;
+		ofImage grab;
 };
