@@ -1,6 +1,17 @@
 #pragma once
 
 #include "ofMain.h"
+#include "ofxFaceMesher.h"
+#include "IMeshModifier.h"
+
+union ModifierPtr {
+	IMeshModifier* mesh;
+	IFaceModifier* face;
+};
+using Modifier = struct {
+	bool isMeshModifier;
+	ModifierPtr modifier;
+};
 
 class ofApp : public ofBaseApp{
 
@@ -20,5 +31,11 @@ class ofApp : public ofBaseApp{
 		void windowResized(int w, int h);
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
+
+		ofLight light;
+		ofEasyCam cam;
+		ofxFaceMesher mesher;
+		std::vector<Modifier> modifiers;
+		ofMaterial material;
 		
 };

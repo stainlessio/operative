@@ -7,6 +7,15 @@
     <ClCompile Include="src\main.cpp">
       <Filter>src</Filter>
     </ClCompile>
+    <ClCompile Include="src\ofxFaceMesher.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\BaseUnitModifier.h">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\BaseUnitModifier.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="src">
@@ -18,6 +27,18 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\ofApp.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ofxFaceMesher.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\IFaceModifier.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\IMeshModifier.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\face.h">
       <Filter>src</Filter>
     </ClInclude>
   </ItemGroup>
