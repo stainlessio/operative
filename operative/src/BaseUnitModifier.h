@@ -15,6 +15,26 @@ public:
 
 	float w, h, d;
 
+	static BaseUnitModifier* baseVolume11() {
+		return new BaseUnitModifier { 100, 100, 100 };
+	}
+
+	static BaseUnitModifier* baseVolume12() {
+		return new BaseUnitModifier { 50, 100, 100 };
+	}
+
+	static BaseUnitModifier* baseVolume14() {
+		return new BaseUnitModifier { 50, 50, 100 };
+	}
+
+	static BaseUnitModifier* baseVolume18() {
+		return new BaseUnitModifier { 50, 50, 50 };
+	}
+
+	static BaseUnitModifier* baseVolumne116() {
+		return new BaseUnitModifier { 25, 25, 100 };
+	}
+
 private:
 	inline Face make_face(ofVec3f p1, ofVec3f p2, ofVec3f p3, ofVec3f p4) const {
 		return{

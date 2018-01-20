@@ -18,7 +18,7 @@ void ofApp::setup(){
 	material.setShininess(0.02);
 	ofEnableDepthTest();
 	ofEnableLighting();
-	modifiers.push_back(mesh(new BaseUnitModifier(100, 100, 100)));
+	modifiers.push_back(mesh(BaseUnitModifier::baseVolumne116()));
 	glPointSize(5.0f);
 }
 

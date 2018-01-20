@@ -176,13 +176,13 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="src\BaseUnitModifier.cpp" />
-    <ClCompile Include="src\BaseUnitModifier.h" />
     <ClCompile Include="src\ofxFaceMesher.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\ofApp.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\face.h" />
+    <ClInclude Include="src\BaseUnitModifier.h" />
     <ClInclude Include="src\IFaceModifier.h" />
     <ClInclude Include="src\IMeshModifier.h" />
     <ClInclude Include="src\ofxFaceMesher.h" />

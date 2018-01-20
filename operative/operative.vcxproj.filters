@@ -10,9 +10,6 @@
     <ClCompile Include="src\ofxFaceMesher.cpp">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="src\BaseUnitModifier.h">
-      <Filter>src</Filter>
-    </ClCompile>
     <ClCompile Include="src\BaseUnitModifier.cpp">
       <Filter>src</Filter>
     </ClCompile>
@@ -39,6 +36,9 @@
       <Filter>src</Filter>
     </ClInclude>
     <ClInclude Include="src\face.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\BaseUnitModifier.h">
       <Filter>src</Filter>
     </ClInclude>
   </ItemGroup>
